@@ -1,10 +1,4 @@
 // This is the function method
-ALGORITHM DotProductAlgorithm
-VAR
-    n: INTEGER;
-    v1, v2: ARRAY_OF FLOAT[];
-    ps: FLOAT;
-
 FUNCTION dot_product(v1, v2: ARRAY_OF FLOAT[]): FLOAT;
 VAR
     i: INTEGER;
@@ -15,7 +9,15 @@ BEGIN
         result := result + v1[i] * v2[i];
     END_FOR;
     RETURN result;
-END dot_product;
+END ;
+
+ALGORITHM DotProductAlgorithm
+VAR
+    n: INTEGER;
+    v1, v2: ARRAY_OF FLOAT[];
+    ps: FLOAT;
+
+
 
 BEGIN
     //(* Input: Number of pairs of vectors *)
